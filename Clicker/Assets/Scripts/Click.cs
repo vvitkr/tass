@@ -2,17 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Click : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int score = 0;
+
+    public void OnClick()
     {
-        
+        score++;   
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

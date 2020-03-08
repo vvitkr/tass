@@ -11,8 +11,8 @@ public class Click : MonoBehaviour
 
     public void OnClick()
     {
-        score++;   
-        scoreText.text = score + '$';
+        score++;
+        scoreText.text = score + " enemies turned to dust";
     }
 
     

@@ -7,7 +7,9 @@ public class Click : MonoBehaviour
 {
    
     public Text scoreText;
+    public GameObject shopPan;
     private int score = 0;
+   
 
     public void OnClick()
     {
@@ -15,5 +17,10 @@ public class Click : MonoBehaviour
         scoreText.text = score + " enemies turned to dust";
     }
 
-    
+    public  void shopPanel()
+    {
+        shopPan.SetActive(!shopPan.activeSelf);
+    }
+
+   
 }

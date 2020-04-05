@@ -416,7 +416,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0423\u043B\u0443\u0447\u0448\u0435\u043D\u0438\u04351"
+  m_Text: "\u041A\u0443\u043F\u0438\u0442\u044C \u0443\u043B\u0443\u0447\u0448\u0435\u043D\u0438\u04351\n20$"
 --- !u!222 &368018105
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -542,6 +542,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 238270894}
+  shopCosts: 14000000
+  shopBonuses: 02000000
+  shopBtnText:
+  - {fileID: 368018104}
   shopPan: {fileID: 2143261418}
 --- !u!20 &519420031
 Camera:
@@ -697,7 +701,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 626377115}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: addBonus
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &626377115
 MonoBehaviour:
   m_ObjectHideFlags: 0
